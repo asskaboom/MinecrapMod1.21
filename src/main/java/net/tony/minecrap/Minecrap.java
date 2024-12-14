@@ -2,6 +2,7 @@ package net.tony.minecrap;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.tony.minecrap.block.ModBlocks;
 import net.tony.minecrap.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,5 +15,6 @@ public class Minecrap implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }

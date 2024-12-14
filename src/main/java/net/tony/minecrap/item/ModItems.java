@@ -13,17 +13,19 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
-    public static final Item CONVEYOR_BELT = registerItem( "conveyor_belt", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Minecrap.MOD_ID,"conveyor_belt")))));
+    //public static final Item CONVEYOR_BELT = registerItem( "conveyor_belt_block.json");
 
-    private static Item registerItem(String name, Item item){
-        return Registry.register(Registries.ITEM, Identifier.of(Minecrap.MOD_ID, name), item);
+    private static Item registerItem(String name){
+        return Registry.register(Registries.ITEM, Identifier.of(Minecrap.MOD_ID, name), new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Minecrap.MOD_ID,name)))));
     }
 
     public static void registerModItems(){
         Minecrap.LOGGER.info("Registering Mod Items for " + Minecrap.MOD_ID);
-
+    /*
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(CONVEYOR_BELT);
         });
+
+    */
     }
 }
