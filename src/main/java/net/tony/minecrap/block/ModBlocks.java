@@ -16,12 +16,15 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
-
-    public static final Block CONVEYOR_BELT_BLOCK = registerBlock("conveyor_belt_block",
+    //new blocks
+    public static final Block CONVEYOR_BELT_BLOCK = registerBlock("conveyor_belt_block.json",
             new Block(AbstractBlock.Settings.create()
                     .strength(1f)
-                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Minecrap.MOD_ID,"conveyor_belt_block.json")))));
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(Minecrap.MOD_ID,"conveyor_belt_block.json.json")))));
 
+
+
+    //methods
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(Minecrap.MOD_ID, name), block);

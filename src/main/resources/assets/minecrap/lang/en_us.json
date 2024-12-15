@@ -1,3 +1,8 @@
 {
-  "block.minecrap.conveyor_belt_block": "Conveyor Belt"
+  "item.minecrap.tv": "Television",
+
+  "block.minecrap.conveyor_belt_block": "Conveyor Belt",
+
+  "itemgroup.minecrap.shmoove_items" : "Shmoove Items",
+  "itemgroup.minecrap.meme_items" : "Meme Items"
 }

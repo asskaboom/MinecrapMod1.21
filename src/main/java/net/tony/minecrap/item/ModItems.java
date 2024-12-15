@@ -12,9 +12,11 @@ import net.minecraft.util.Identifier;
 
 
 public class ModItems {
-
+    //Items
     //public static final Item CONVEYOR_BELT = registerItem( "conveyor_belt_block.json");
+    public static final Item TV = registerItem("tv");
 
+    //Methods
     private static Item registerItem(String name){
         return Registry.register(Registries.ITEM, Identifier.of(Minecrap.MOD_ID, name), new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Minecrap.MOD_ID,name)))));
     }
